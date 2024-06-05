@@ -71,6 +71,27 @@ public class deleteTask {
         } else {
             System.out.println("Invalid index.");
         }
+
+        static void listTasks() {
+            System.out.println("Task List:");
+            for (int i = 0; i < counter; i++) {
+                String status = completed[i] ? "[X]" : "[ ]";
+                System.out.println((i + 1) + ". " + status + " " + tasks[i]);
+            }
+        }
+
+        static void markTaskAsCompleted() {
+            System.out.print("Enter the task number to mark as completed: ");
+            int index = scanner.nextInt() - 1;
+            scanner.nextLine(); // Clear the buffer
+
+            if (index >= 0 && index < counter) {
+                completed[index] = true;
+                System.out.println("Task marked as completed.");
+            } else {
+                System.out.println("Invalid index.");
+            }
+        }
+
     }
-    
 }
