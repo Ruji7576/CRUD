@@ -1,6 +1,6 @@
-﻿##Task Management Project
+﻿### Task Management Project
 
-###Description
+### Description
 This project is a task management application that allows users to efficiently handle their tasks. The application offers functionalities to display the main menu, add new tasks, delete existing tasks, list all tasks, and mark tasks as completed.
 
 Features
